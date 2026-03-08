@@ -1,0 +1,12 @@
+[project]
+name = "sample-client"
+version = "0.1.0"
+description = "Sample client demonstrating llm_selector usage"
+requires-python = ">=3.12"
+dependencies = [
+    "openai==2.21.0",
+    "llm-selector",
+]
+
+[tool.uv.sources]
+llm-selector = { path = "../libs/llm-selector", editable = true }
